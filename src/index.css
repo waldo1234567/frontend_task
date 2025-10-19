@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Subtle focus ring accessible on dark */
+.focus-ring { outline: none; }
+.focus-ring:focus-visible { box-shadow: 0 0 0 4px rgba(93,125,255,0.35); border-radius: 0.5rem; }
+
+/**********************/
+/* Parallax utilities */
+/**********************/
+.parallax-section {
+  position: relative;
+  overflow: clip;
+}
+
+/* Glass surface */
+.glass {
+  background: rgba(13, 18, 40, 0.6);
+  backdrop-filter: saturate(160%) blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
